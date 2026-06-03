@@ -1,7 +1,7 @@
 {
-  "name": "clawd-on-desk",
-  "version": "0.8.1",
-  "description": "A desktop pet that reacts to your Claude Code sessions in real-time.",
+  "name": "ai-island",
+  "version": "0.1.0",
+  "description": "AI Island - A desktop companion for your AI coding journey.",
   "main": "src/main.js",
   "scripts": {
     "start": "node scripts/ensure-sidecar-binaries.js && node launch.js",
@@ -46,28 +46,28 @@
     "register-protocol:dev": "node launch.js --register-protocol"
   },
   "keywords": [
-    "clawd",
+    "ai-island",
     "desktop-pet",
     "electron",
     "claude-code"
   ],
-  "author": "rullerzhou-afk",
+  "author": "YushanChen <chenyushan0204-bot@users.noreply.github.com>",
   "license": "AGPL-3.0-only",
   "type": "commonjs",
   "build": {
-    "appId": "com.clawd.on-desk",
-    "productName": "Clawd on Desk",
+    "appId": "com.ai-island.app",
+    "productName": "AI Island",
     "protocols": [
       {
-        "name": "Clawd Import Protocol",
+        "name": "AI Island Import Protocol",
         "schemes": [
-          "clawd"
+          "ai-island"
         ]
       }
     ],
     "mac": {
       "icon": "assets/icon.png",
-      "artifactName": "Clawd-on-Desk-${version}-${arch}.${ext}",
+      "artifactName": "AI-Island-${version}-${arch}.${ext}",
       "target": [
         {
           "target": "dmg",
@@ -85,7 +85,7 @@
     "win": {
       "icon": "assets/icon.ico",
       "signAndEditExecutable": false,
-      "artifactName": "Clawd-on-Desk-Setup-${version}-${arch}.${ext}",
+      "artifactName": "AI-Island-Setup-${version}-${arch}.${ext}",
       "target": [
         {
           "target": "nsis",
@@ -97,10 +97,10 @@
       ]
     },
     "linux": {
-      "maintainer": "rullerzhou-afk <rullerzhou-afk@users.noreply.github.com>",
+      "maintainer": "YushanChen <chenyushan0204-bot@users.noreply.github.com>",
       "icon": "assets/icons",
       "category": "Utility",
-      "artifactName": "Clawd-on-Desk-${version}-${arch}.${ext}",
+      "artifactName": "AI-Island-${version}-${arch}.${ext}",
       "target": [
         {
           "target": "AppImage",
@@ -158,8 +158,8 @@
     "publish": [
       {
         "provider": "github",
-        "owner": "rullerzhou-afk",
-        "repo": "clawd-on-desk"
+        "owner": "chenyushan0204-bot",
+        "repo": "ai-island"
       }
     ]
   },

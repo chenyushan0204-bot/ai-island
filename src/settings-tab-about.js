@@ -148,11 +148,11 @@
 
     const crabWrap = document.createElement("div");
     crabWrap.className = "about-crab-wrap";
-    crabWrap.title = "Clawd";
+    crabWrap.title = "AI Island";
 
     const title = document.createElement("h2");
     title.className = "about-title";
-    title.textContent = "Clawd on Desk";
+    title.textContent = "AI Island";
 
     const tagline = document.createElement("p");
     tagline.className = "about-tagline";

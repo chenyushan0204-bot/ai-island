@@ -24,7 +24,7 @@ function getDefaultCodexPetsDir(homeDir = os.homedir()) {
   return path.join(homeDir, ".codex", "pets");
 }
 
-function parseClawdImportUrl(rawUrl) {
+function parseAIIslandImportUrl(rawUrl) {
   let parsed;
   try {
     parsed = new URL(String(rawUrl || ""));
@@ -531,7 +531,7 @@ module.exports = {
   IMPORT_MARKER_FILENAME,
   ERR_REPLACE_DECLINED,
   getDefaultCodexPetsDir,
-  parseClawdImportUrl,
+  parseAIIslandImportUrl,
   normalizeRemotePetUrl,
   isBlockedHostname,
   isBlockedIp,

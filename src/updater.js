@@ -5,7 +5,7 @@ const fs = require("fs");
 const electron = require("electron");
 
 const isMac = process.platform === "darwin";
-const RELEASES_LATEST_URL = "https://github.com/rullerzhou-afk/clawd-on-desk/releases/latest";
+const RELEASES_LATEST_URL = "https://github.com/chenyushan0204-bot/ai-island/releases/latest";
 
 function makeTranslate(ctx) {
   return (key, fallback) => {

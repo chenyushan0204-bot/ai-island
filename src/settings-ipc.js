@@ -326,7 +326,7 @@ function registerSettingsIpc(options = {}) {
     try {
       result = await dialog.showOpenDialog(getDialogParent(event), {
         properties: ["openFile"],
-        filters: [{ name: "Clawd theme zip", extensions: ["zip"] }],
+        filters: [{ name: "AI Island theme zip", extensions: ["zip"] }],
       });
     } catch (err) {
       return { status: "error", message: `theme zip picker failed: ${err && err.message}` };
@@ -401,11 +401,11 @@ function registerSettingsIpc(options = {}) {
     } catch {}
     return {
       version: app.getVersion(),
-      repoUrl: "https://github.com/rullerzhou-afk/clawd-on-desk",
+      repoUrl: "https://github.com/chenyushan0204-bot/ai-island",
       license: "AGPL-3.0",
-      copyright: "\u00a9 2026 Ruller_Lulu",
-      authorName: "Ruller_Lulu / \u9e7f\u9e7f",
-      authorUrl: "https://github.com/rullerzhou-afk",
+      copyright: "\u00a9 2026 YushanChen",
+      authorName: "YushanChen",
+      authorUrl: "https://github.com/chenyushan0204-bot",
       heroSvgContent,
       pendingUpdateVersion,
       autoUpdateCheck,
