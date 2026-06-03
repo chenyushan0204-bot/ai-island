@@ -167,39 +167,6 @@
     infoSection.className = "section";
     parent.appendChild(infoSection);
 
-    const contribRow = document.createElement("div");
-    contribRow.className = "about-info-row";
-    const contribLabel = document.createElement("div");
-    contribLabel.className = "about-info-label";
-    contribLabel.textContent = t("aboutContributorsLabel") + " (" + i18n.CONTRIBUTORS.length + ")";
-    const toggleBtn = document.createElement("button");
-    toggleBtn.className = "about-contributors-toggle";
-    toggleBtn.textContent = runtime.about.contributorsExpanded ? t("aboutContributorsHide") : t("aboutContributorsShowAll");
-    contribRow.appendChild(contribLabel);
-    contribRow.appendChild(toggleBtn);
-
-    const contribList = document.createElement("div");
-    contribList.className = "about-contributors-list" + (runtime.about.contributorsExpanded ? "" : " collapsed");
-    for (const name of i18n.CONTRIBUTORS) {
-      const link = document.createElement("a");
-      link.className = "about-contributor-link";
-      link.textContent = "@" + name;
-      link.href = "#";
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        helpers.openExternalSafe("https://github.com/" + name);
-      });
-      contribList.appendChild(link);
-    }
-
-    toggleBtn.addEventListener("click", () => {
-      runtime.about.contributorsExpanded = !runtime.about.contributorsExpanded;
-      contribList.classList.toggle("collapsed", !runtime.about.contributorsExpanded);
-      toggleBtn.textContent = runtime.about.contributorsExpanded
-        ? t("aboutContributorsHide")
-        : t("aboutContributorsShowAll");
-    });
-
     const footer = document.createElement("div");
     footer.className = "about-footer";
     footer.textContent = t("aboutFooter");
@@ -312,8 +279,6 @@
         ));
       }
 
-      infoSection.appendChild(contribRow);
-      infoSection.appendChild(contribList);
     });
   }
 
