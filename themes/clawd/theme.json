@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "name": "Clawd",
-  "author": "rullerzhou",
+  "name": "小克",
+  "author": "YushanChen",
   "version": "1.0.0",
-  "description": "The original pixel crab — Clawd the Claude Code mascot",
-  "repo": "https://github.com/nicepkg/clawd",
+  "description": "小克 — AI Island 默认桌宠",
+  "repo": "https://github.com/chenyushan0204-bot/ai-island",
   "viewBox": {
     "x": -15,
     "y": -25,
